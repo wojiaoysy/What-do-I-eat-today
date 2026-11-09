@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f4e9" />
+    <meta name="description" content="今天吃什么？从52种南方常见蔬菜和39种肉类水产中各抽一种，看看营养亮点和家常做法。" />
+    <title>今天吃什么 · 菜篮子灵感</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="今天吃什么，返回顶部">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          <span>今天吃什么</span>
+        </a>
+        <span class="header-note"><span class="live-dot"></span> 给餐桌一点新鲜主意</span>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> TODAY'S TABLE · 今日餐桌</p>
+            <h1 id="page-title">今晚吃什么，<br /><em>交给一点运气。</em></h1>
+            <p class="hero-description">蔬菜和肉类各抽一种。看看营养亮点，挑一道顺手的家常菜，让“随便吃点”也有好答案。</p>
+            <div class="hero-stats" aria-label="食材总数">
+              <div><strong>52</strong><span>种蔬菜</span></div>
+              <span class="stats-divider" aria-hidden="true"></span>
+              <div><strong>39</strong><span>种肉类与水产</span></div>
+              <span class="stats-divider" aria-hidden="true"></span>
+              <div><strong>273</strong><span>道家常做法</span></div>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-ring art-ring-outer"></div>
+            <div class="art-ring art-ring-inner"></div>
+            <div class="plate"><span class="plate-leaf leaf-one">◕</span><span class="plate-leaf leaf-two">◕</span><span class="plate-carrot">🥕</span><span class="plate-tomato">🍅</span><span class="plate-fish">🐟</span><span class="plate-spark">✳</span></div>
+            <span class="art-label label-top">新鲜一点</span>
+            <span class="art-label label-bottom">好好吃饭 ↗</span>
+          </div>
+        </section>
+
+        <section class="chooser" aria-label="随机选择食材">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">PICK SOMETHING GOOD</p>
+              <h2>抽一抽，今晚就有谱了。</h2>
+            </div>
+            <p>两个菜篮子，分别打乱。<br />抽完一轮，再来新的惊喜。</p>
+          </div>
+
+          <div class="choice-grid">
+            <article class="choice-card vegetable-card" data-kind="vegetables">
+              <div class="card-topline"><span class="category-icon" aria-hidden="true">✿</span><span>01 / 菜篮子</span><span class="card-count">52 种可选</span></div>
+              <div class="card-intro">
+                <div>
+                  <p class="card-eyebrow">VEGETABLES</p>
+                  <h3>来点<span>蔬菜</span></h3>
+                  <p class="card-description">一口清爽，一桌好颜色。<br />看看今天的蔬菜缘分。</p>
+                </div>
+                <div class="card-emblem veg-emblem" aria-hidden="true">🥬</div>
+              </div>
+              <div class="result" id="vegetable-result" hidden aria-live="polite"></div>
+              <button class="draw-button" id="vegetable-button" type="button" disabled><span class="button-label">随机生成一种蔬菜</span><span aria-hidden="true">↗</span></button>
+            </article>
+
+            <article class="choice-card meat-card" data-kind="meats">
+              <div class="card-topline"><span class="category-icon" aria-hidden="true">✦</span><span>02 / 肉铺与水产</span><span class="card-count">39 种可选</span></div>
+              <div class="card-intro">
+                <div>
+                  <p class="card-eyebrow">MEAT & SEAFOOD</p>
+                  <h3>配点<span>荤菜</span></h3>
+                  <p class="card-description">煎炒蒸炖，总有一种合胃口。<br />今晚主菜交给它。</p>
+                </div>
+                <div class="card-emblem meat-emblem" aria-hidden="true">🍗</div>
+              </div>
+              <div class="result" id="meat-result" hidden aria-live="polite"></div>
+              <button class="draw-button" id="meat-button" type="button" disabled><span class="button-label">随机生成一种肉类</span><span aria-hidden="true">↗</span></button>
+            </article>
+          </div>
+          <p class="error-message" id="load-error" role="alert" hidden>清单加载失败，请刷新页面重试。</p>
+        </section>
+
+        <aside class="footer-note"><span aria-hidden="true">✳</span><p>食材、营养关键词和家常做法整理自所提供的《南方常见蔬菜与肉类清单》。营养关键词只表示食材含有相关成分，不代表特定含量或医疗功效。鲜木耳请清洗后做熟。</p></aside>
+      </main>
+
+      <footer class="site-footer"><span>今天吃什么 © 菜篮子灵感</span><span>好好吃饭，从今天开始。</span></footer>
+    </div>
+  </body>
+</html>
